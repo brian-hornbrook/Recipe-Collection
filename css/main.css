@@ -4,35 +4,15 @@ body {
     font-size: small;
 }
 
-
-/***** header *****/
-header {
-    background-color: white;
-    text-align: center;
-}
-
-.header-area {
-    display: inline-block;
-}
-
-header img {
-    height: 30px;
-    margin-right: 10px;
-}
-
-header h1 {
-    color: #ff0000a6;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-
-/***** main *****/
 main {
-    width: 1000px;
     background-color: lightcyan;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
 }
+
 
 
 /***** recipe cards *****/
@@ -108,6 +88,7 @@ main {
 }
 
 
+
 /***** colums *****/
 .columns {
     overflow: auto;
@@ -142,3 +123,46 @@ ol {
     padding-left: 25px;
     line-height: 22px;
 }
+
+
+
+/***** header *****/
+header {
+    background-color: white;
+    text-align: center;
+}
+
+.header-area {
+    display: inline-block;
+}
+
+header img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+header h1 {
+    color: #ff0000a6;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+
+/***** TABLET *****/
+@media (min-width: 768px) {
+    main {
+        width: 100%;
+        background-color: white;
+    }
+
+    .card {
+        width: 910px;
+        margin: 15px 45px;
+        background-color: lightcyan;
+    }
+}
+
+
+
